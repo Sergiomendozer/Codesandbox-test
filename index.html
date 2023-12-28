@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+        ></script>
+    </head>
+  <body>
+    <div class="grid-container">
+        <div class="inputs">
+        <p style="font-size:1.5vw">Principle</p>
+            <input type="number" id ="principle" min="0" value =""></input>
+
+        <p style="font-size:1.5vw" >Number of Payments</p>
+            <input type="number" id ="months" min="0" value =""></input>
+        
+        <p style="font-size:1.5vw" >% Rate </p>
+            <input type="number" id ="rate" min="0" max="100" value =""></input>
+
+        <button type="button" class="btn btn-primary btn-lg" onclick="calculations()">Calculate</button>
+       
+        </div>
+        <div class="calculations">
+        <p id ="monthly_payments">Monthly Payments:</p>
+        <p id ="total_principle">Total Principle:</p>
+        <p id ="total_interest">Total Interest:</p>
+        <p id ="total_loan">Total Loan:</p>
+        </div>
+        <div class = "Percentages">
+            <div id="pie_chart" style="width: 350px; height: 250px"></div>
+        </div>
+        <div>
+            <img class="icon" src="./LS_icon.png" width="220" height="220"/>
+        </div>
+    </div>
+</br>
+    <table style="width:100%">
+        <tr class = "top-table">
+            <td>Month</td>
+            <td>Payment</td>
+            <td>Principle</td>
+            <td>Interest amount</td>
+            <td>Interest paid</td>
+            <td>Remaining Balance</td>
+        </tr>
+        <td id="Month row" align="center"></td></td>
+        <td id="Payment row" align="center"></td>
+        <td id="Principle row" align="center"></td>  
+        <td id="Interest amount row" align="center"></td>
+        <td id="Interest paid row" align="center"></td>
+        <td id="Remaining Balance row" align="center"></td>
+        
+      </table>
+  </body>
+  <script src="./scripts.js"></script>
+  <link rel="stylesheet" href="./styles.css" />
+</html>
